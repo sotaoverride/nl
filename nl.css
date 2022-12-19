@@ -1,0 +1,81 @@
+.parent{
+	position: absolute;
+	padding: 25px 25px 25px 25px;
+	background-color: coral;
+	border: 12px solid pink;
+}
+
+.child{
+	float: left;
+	padding: 25px 25px 25px 25px;
+	background-color: coral;
+}
+
+.child p{
+	font-family: "ProximaNovaSemiBold","Arial",sans-serif;
+	color: #000;
+}
+
+.child-element,.child-element-3,.child-element-4 {
+    display: none;
+}
+/*show .ab*/
+.child p:hover ~ .child-element {
+    display: block;
+    
+}
+.child p:hover ~ .child-element-3 {
+    display: block;
+    
+}
+.child p:hover ~ .child-element-4 {
+    display: block;
+    
+}
+/*show .abc*/
+#s:hover ~ .abc {
+    display: block;
+}
+
+#s:hover ~ .a,
+#f:hover ~ .a{
+    display: none;
+}
+
+
+.child-element{
+	float: left;
+	background-image: url("complimentary.jpg");
+ 	background-color: #cccccc;
+	background-size: cover;
+	width: 125px;
+	height: 125px;
+	border: 2px solid;
+	color: pink;
+}
+
+.child-element-3{
+	float: left;
+	background-image: url("notch.png");
+ 	background-color: #cccccc;
+	background-size: cover;
+	width: 125px;
+	height: 125px;
+	border: 2px solid;
+	color: pink;
+}
+
+.child-element-4{
+	float: left;
+	background-image: url("notch_wide.png");
+ 	background-color: #cccccc;
+	background-size: cover;
+	width: 125px;
+	height: 125px;
+	border: 2px solid;
+	color: pink;
+}
+
+.clear-both{
+	float: clear-both;
+}
